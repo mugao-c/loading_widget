@@ -19,6 +19,15 @@ private slots:
     void animationStoped();
 
 protected:
+    inline int currentFrame() { return m_currentFrame; }
+    inline void setCurrentFrame(const int& frame) { m_currentFrame = frame; }
+    inline QColor backgroundColor() { return m_bgColor; }
+    inline QList<QColor> itemColors() { return m_itemColors; }
+    inline int totalCount() { return m_totalCount; }
+    inline void setTotalCount(const int& count) { m_totalCount = count; }
+    inline int itemLength() { return m_itemLength; }
+
+protected:
     virtual void updateFrame() override;
     virtual void updateFrameRects() override;
     virtual void paintEvent(QPaintEvent*) override;
