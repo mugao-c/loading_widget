@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+*.user
+*.stash
+/bin
+/temp
