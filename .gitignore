@@ -34,3 +34,4 @@
 *.stash
 /bin
 /temp
+.DS_Store
