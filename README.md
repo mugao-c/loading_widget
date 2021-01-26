@@ -17,5 +17,5 @@ QT加载动画控件
 
   演示效果
 
-  ![image](https://github.com/mugao-c/loading_widget/blob/main/res/2021-01-26%2020.43.54.gif?raw=true)
+  ![image](https://img-blog.csdnimg.cn/20210126204625605.gif#pic_center)
 
