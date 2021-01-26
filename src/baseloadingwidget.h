@@ -36,7 +36,7 @@ protected:
             return m_frameRects.at(index);
         return QRect();
     }
-    inline bool stopLoadding() { return m_animationStop; }
+    inline bool stopLoading() { return m_animationStop; }
     // 设置某帧的绘制信息
     inline void setFrameRect(const int& index,const QRect& rect) {
         if (0 <= index && index < m_frameRects.count())

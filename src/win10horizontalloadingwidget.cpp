@@ -58,7 +58,7 @@ void Win10HorizontalLoadingWidget::updateFrame()
     m_currentFrame += 1;
     if (m_currentFrame >= m_totalCount) {
         m_currentFrame = 0;
-        if (stopLoadding()) {
+        if (stopLoading()) {
             stopAnimationTimer();
         }
     }
