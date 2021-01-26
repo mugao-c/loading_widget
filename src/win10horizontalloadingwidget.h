@@ -30,6 +30,7 @@ private:
     int m_currentFrame; // 当前帧下标
     QColor m_bgColor; // 独立显示时的背景颜色
     QList<QColor> m_itemColors; // item的颜色
+    int m_totalCount; // 总共的帧数
 };
 
 #endif // WIN10HORIZONTALLOADINGWIDGET_H

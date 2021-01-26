@@ -7,7 +7,7 @@ Win10HorizontalLoadingWidget::Win10HorizontalLoadingWidget(QWidget *parent)
 {
     m_currentFrame = 0;
     setItemCount(1);
-    setItemLength(5);
+    setItemLength(10);
     setBackgroundColor(QColor(Qt::white));
     auto curve = QEasingCurve(QEasingCurve::BezierSpline);
     curve.addCubicBezierSegment(QPointF(0.31f, 0.85f),QPointF(0.77f, 0.14f),QPointF(1,1));
@@ -50,12 +50,13 @@ void Win10HorizontalLoadingWidget::updateFrameRects()
         int x = frameValue(i)*width();
         setFrameRect(i,QRect(x,y,w,w));
     }
+    m_totalCount = frameCount()+extendFrameCount()*(m_itemCount-1);
 }
 
 void Win10HorizontalLoadingWidget::updateFrame()
 {
     m_currentFrame += 1;
-    if (m_currentFrame >= (frameCount()+extendFrameCount()*(m_itemCount-1))) {
+    if (m_currentFrame >= m_totalCount) {
         m_currentFrame = 0;
         if (stopLoadding()) {
             stopAnimationTimer();
