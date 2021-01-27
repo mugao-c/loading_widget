@@ -18,4 +18,7 @@ QT加载动画控件
   演示效果
 
   ![image](https://img-blog.csdnimg.cn/20210126204625605.gif#pic_center)
+  
+- Win10CircleLoadingWidget
 
+  Windwos 10圆形加载动画
