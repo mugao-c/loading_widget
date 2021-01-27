@@ -11,7 +11,6 @@ public:
 
 protected:
     virtual void updateFrameRects() override;
-    virtual void updateFrame() override;
     virtual void paintEvent(QPaintEvent *) override;
 
 signals:

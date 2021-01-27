@@ -24,18 +24,6 @@ void Win10CircleLoadingWidget::updateFrameRects()
     setTotalCount(frameCount()+extendFrameCount()*(itemCount()-1));
 }
 
-void Win10CircleLoadingWidget::updateFrame()
-{
-    setCurrentFrame(currentFrame()+1);
-    if (currentFrame() >= totalCount()) {
-        setCurrentFrame(0);
-        if (stopLoading()) {
-            stopAnimationTimer();
-        }
-    }
-    update();
-}
-
 void Win10CircleLoadingWidget::paintEvent(QPaintEvent *)
 {
     QPainter painter(this);
