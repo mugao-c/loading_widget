@@ -1,4 +1,4 @@
-#ifndef WIN10CIRCLELOADINGWIDGET_H
+﻿#ifndef WIN10CIRCLELOADINGWIDGET_H
 #define WIN10CIRCLELOADINGWIDGET_H
 
 #include "win10horizontalloadingwidget.h"

@@ -26,6 +26,7 @@ protected:
     inline int totalCount() { return m_totalCount; }
     inline void setTotalCount(const int& count) { m_totalCount = count; }
     inline int itemLength() { return m_itemLength; }
+    inline int itemCount() { return m_itemCount; }
 
 protected:
     virtual void updateFrame() override;
